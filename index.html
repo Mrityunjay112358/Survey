@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>
+
+<div id="outside">
+<form id="survey-form" action="/my-handling-form-page" method="post">
+  <h1 id="title">Health Survey Form</h1>
+  <p id="description"><b>Note:</b> Form is to be completed and submitted last by 31st July</p>
+  
+  <!-- ------------------Personal Details---------------------------- -->
+  <fieldset>
+    
+    <legend>Personal Details</legend>
+   
+    <div>
+      <label id="name-label" for="name">Name:</label>
+      <input type="text" required id="name" name="user_name" placeholder="Enter name here">   </div>
+    
+    <div>
+      <label id="email-label" for="Email">Email:</label>
+      <input type="email" required id="email" name="user_email" placeholder="Enter email here">   </div>
+    <div>
+      <label id="number-label" for="phone">Phone Number:</label>
+      <input id="number" name="user_name" placeholder="Enter 10 digit number">  </div>
+    
+ 
+      <label for="Gender">Gender</label>
+      <p>
+        <input type="radio" name="gender" value="male" checked> Male<br>
+        <input type="radio" name="gender" value="female"> Female<br>
+        <input type="radio" name="gender" value="other"> Other
+      </p>
+
+  <label for="date-label">Date of Birth:</label>
+    <input type="date" name="bday">
+   
+  
+  
+  </fieldset>
+  <!-- ------------------Checkboxes-------------------------------- -->
+  <fieldset>
+    <label for="Gender">Check All That Apply</label>
+    <p>
+      <input type="checkbox">Have cold and cough<br>
+      <input type="checkbox">Have had chicken pox<br>
+      <input type="checkbox"> Suffered from heart diseases now or in the past<br>
+      <input type="checkbox">B.M.I. between 19 and 25<br>
+      <input type="checkbox"> Have breathing problems<br>
+   
+    </p>
+  </fieldset>
+  
+  <!-- -----------------Dropdown menus--------------------------------- -->
+  
+  <fieldset>
+    <div>
+      <label>Blood Type</label>
+      <select id="dropdown">
+  <option>A+</option>
+  <option>B+</option>
+  <option>O+</option>
+  <option>AB-</option>
+  <option>O-</option>
+  <option>A-</option>
+  <option>B-</option>
+
+  </select>
+    </div>
+  </fieldset>
+
+  <!-- --------------------Text Areas------------------------------ -->
+  
+  <fieldset>
+    <legend>Essay Section</legend>
+    <div>
+      <label for="msg"></label>
+      <p> In 50 words or more explain your diet and health</p>
+      <textarea id="msg" name="user_message" rows="4" cols="50" placeholder="Enter Text Here"></textarea>   </div>
+    <div>
+      
+  </fieldset>
+
+  <div id="submitbutton">
+    <a href="responded.html">Submit</a>   </div>
+</div>
+</form>
+  </div>
+
+</body>
+</html>
