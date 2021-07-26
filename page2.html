@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>
+
+<div id="outside">
+<form id="survey-form" action="/my-handling-form-page" method="post">
+  <h1 id="title">Health Survey Form</h1>
+  <p id="description"><b>Note:</b>The form is created to collect data to make sure of your health after the recent Covid-19 cases in the neighbourhood..It is to be completed and submitted last by 5th August</p>
+  
+ 
+  
+  
+  <fieldset>
+    <div>
+      <label>Blood Type</label>
+      <select id="dropdown">
+  <option>A+</option>
+  <option>B+</option>
+  <option>O+</option>
+  <option>AB-</option>
+  <option>O-</option>
+  <option>A-</option>
+  <option>B-</option>
+
+  </select>
+    </div>
+
+<div>
+
+
+    <label for="Checkup">How often do you get a health checkup?</label>
+      <p>
+        <input type="radio" name="checkup" value="male" checked> Once a month<br>
+        <input type="radio" name="checkup" value="female"> Once in 2 months<br>
+        <input type="radio" name="checkup" value="female"> Once in 4 months<br>
+        <input type="radio" name="checkup" value="female"> Once a year<br>
+        <input type="radio" name="checkup" value="female"> Rarely<br>
+
+
+      </p>
+
+</div>
+  </fieldset>
+
+  
+  <fieldset>
+    <legend>Essay Section</legend>
+    <div>
+      <label for="msg"></label>
+
+
+<p> Are you on any medication course?(type in and explain only if yes)</p>
+      <textarea id="msg" name="user_message" rows="4" cols="50" placeholder="Enter Text Here"></textarea>   </div>
+
+      <p> In 50 words or more explain your diet and health</p>
+      <textarea id="msg" name="user_message" rows="4" cols="50" placeholder="Enter Text Here"></textarea>   </div>
+    <div>
+      
+  </fieldset>
+
+  <div id="submitbutton">
+    <a href="responded.html">Submit</a>   </div>
+</div>
+</form>
+  </div>
+
+</body>
+</html>
