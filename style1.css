@@ -1,6 +1,7 @@
 body {
   font-family: 'Anaheim';
   font-size: 1.2em;
+width:100%;
 }
 
 #outside {
@@ -100,5 +101,24 @@ button {
 #next {
   display: flex; 
   justify-content: center;
+}
+
+
+
+#plussign{
+
+width:60px;
+height:60px;
+float:left;
+
+}
+
+
+#docsign{
+
+width:60px;
+height:60px;
+float:right;
+
 }
 
